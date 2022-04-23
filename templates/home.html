@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+    <!-- Include header -->
+    <head>
+        <!--Author: Catikia
+        Date: 4/22/2022
+        -->
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+
+        <!-- Site specific CSS -->
+        <!-- <link rel="stylesheet" href="static-dev/css/clock.css"> -->
+
+        <!-- SEO Business description -->
+        <meta name='Description' content="This is an analog clock that can be used in a stream overlay to show the current Arizona time and temperature." />
+
+        <!-- SEO site/business/page name -->
+        <title>
+            Clock
+        </title>
+    </head>
+    <body>
+      <h1 id="p1">Time</h1>
+
+    <!-- clock section -->
+
+        <!-- hour hand section -->
+
+        <!-- minute hand section -->
+
+        <!-- second hand section -->
+
+        <!-- number cats section -->
+
+        <!-- temperature section -->
+
+            <!-- fahrenheit section -->
+
+            <!-- celsius section -->
+
+    <!-- javascript -->
+    <script>
+        //get the initial date to display
+        document.getElementById("p1").innerHTML = getTime();
+
+        // function to get time //
+        function getTime(){
+          var currentDateTime = new Date();
+          return currentDateTime;
+        }
+
+        // set interval to update time every second
+        var updateTime = setInterval(function (){
+          document.getElementById("p1").innerHTML = getTime()
+        },500);
+        
+    </script>
+        <!-- funtion to animate second hand -->
+        <!-- function to animate minute hand -->
+        <!-- function to animate hour hand -->
+        <!-- function to get temperature in celsius -->
+        <!-- function to calculate temperature in celsius -->
+
+
+
+    <!-- Bootstrap Bundle with Popper -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> -->
+    </body>
+
+</html>
